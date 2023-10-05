@@ -70,10 +70,10 @@ public class VigenereCipherTest {
     }
 
     @Test
-    @Disabled
     void decryptsCaesarCipherTextCharacters() {
         int caesarShift = 3;
-        String keywordForCaesarShift3 = "whatisthekeyword";
+        /*String keywordForCaesarShift3 = "whatisthekeyword";*/
+        String keywordForCaesarShift3 = "D"; // D or d
         String plaintextOriginal = "Caesar cipher is a special case of Vigenere cipher.";
         String cipherText = caesarCipher.encrypt(plaintextOriginal, caesarShift);
         String plainText = vigenereCipher.decrypt(cipherText, keywordForCaesarShift3);
